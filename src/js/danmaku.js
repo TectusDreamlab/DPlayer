@@ -67,14 +67,14 @@ class Danmaku {
                 results[i] = [];
             }
             else {
-                const typeMap = ['right', 'top', 'bottom'];
+                // const typeMap = ['right', 'top', 'bottom'];
                 if (data) {
                     results[i] = data.map((item) => ({
-                        time: item[0],
-                        type: typeMap[item[1]],
-                        color: item[2],
-                        author: item[3],
-                        text: item[4]
+                        time: item.time,
+                        type: item.type,
+                        color: item.color,
+                        author: item.author,
+                        text: item.text
                     }));
                 }
                 else {

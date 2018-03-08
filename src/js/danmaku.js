@@ -21,10 +21,10 @@ class Danmaku {
     load () {
         let apiurl;
         if (this.options.api.maximum) {
-            apiurl = `${this.options.api.address}v2/?id=${this.options.api.id}&max=${this.options.api.maximum}`;
+            apiurl = `${this.options.api.address}/?id=${this.options.api.id}&max=${this.options.api.maximum}`;
         }
         else {
-            apiurl = `${this.options.api.address}v2/?id=${this.options.api.id}`;
+            apiurl = `${this.options.api.address}/?id=${this.options.api.id}`;
         }
         const endpoints = (this.options.api.addition || []).slice(0);
         endpoints.push(apiurl);
@@ -67,7 +67,7 @@ class Danmaku {
                 results[i] = [];
             }
             else {
-                const typeMap = ['right', 'top', 'bottom'];
+                const typeMap = ['top', 'right', 'bottom'];
                 if (data) {
                     results[i] = data.map((item) => ({
                         time: item[0],

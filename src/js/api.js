@@ -46,9 +46,9 @@ export default {
         SendXMLHttpRequest(endpoint, null, (xhr, response) => {
             callback(null, response.Messages);
         }, (xhr, response) => {
-            callback({ status: xhr.status, response });
+            callback(null, response.Messages);
         }, (xhr) => {
-            callback({ status: xhr.status, response: null });
+            callback(xhr.status);
         });
     }
 };

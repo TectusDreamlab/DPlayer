@@ -28,8 +28,8 @@ function initPlayers () {
             url: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.vtt'
         },
         danmaku: {
-            id: '9E2E3368B56CDBB4',
-            api: 'https://api.prprpr.me/dplayer/'
+            id: 'f278db74-b151-bf2d-d58d-e278dd52872c%408e5604af-99db-47a5-b5e9-465040486690',
+            api: 'http://192.168.210.93:8080/v1/file/result'
         }
     });
 
@@ -59,13 +59,8 @@ function initPlayers () {
             color: '#b7daff'
         },
         danmaku: {
-            id: '9E2E3368B56CDBB4',
-            api: 'https://api.prprpr.me/dplayer/',
-            token: 'tokendemo',
-            maximum: 3000,
-            user: 'DIYgod',
-            bottom: '15%',
-            unlimited: true
+            id: 'f278db74-b151-bf2d-d58d-e278dd52872c%408e5604af-99db-47a5-b5e9-465040486690',
+            api: 'http://192.168.210.93:8080/v1/file/result'
         },
         contextmenu: [
             {

@@ -4,7 +4,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    font-size: 22px;
+    font-size: 24px;
     color: #fff;
     .dplayer-danmaku-item {
         display: inline-block;
@@ -24,7 +24,7 @@
         transform: translateX(100%);
         &.dplayer-danmaku-move {
             will-change: transform;
-            animation: danmaku 5s linear;
+            animation: danmaku 10s linear;
             animation-play-state: paused;
         }
     }

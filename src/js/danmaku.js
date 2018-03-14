@@ -67,14 +67,15 @@ class Danmaku {
                 results[i] = [];
             }
             else {
-                const typeMap = ['top', 'right', 'bottom'];
+                const typeMap = ['right', 'top', 'bottom'];
                 if (data) {
                     results[i] = data.map((item) => ({
                         time: item[0],
-                        type: typeMap[item[1]],
-                        color: item[2],
-                        author: item[3],
-                        text: item[4]
+                        type: typeMap[item[2]],
+                        color: item[3],
+                        author: item[4],
+                        text: item[5],
+                        duration: item[1]
                     }));
                 }
                 else {
@@ -261,6 +262,9 @@ class Danmaku {
                 if (tunnel >= 0) {
                     // move
                     item.classList.add(`dplayer-danmaku-move`);
+                    if (dan[i].type === 'top') {
+                        item.style.animation = `danmaku-center ${ dan[i].duration }s linear`;
+                    }
 
                     // insert
                     docFragment.appendChild(item);
